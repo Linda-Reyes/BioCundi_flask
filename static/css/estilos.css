@@ -1,0 +1,233 @@
+:root {
+    --color-fondo-primario: #54841f;
+    --color-primario: #bfea7c;
+
+    --color-fondo-secundario: #d7df6c;
+    --color-secundario: rgb(20, 29, 16);
+
+    --color-fondo-terceario: rgba(64, 136, 43);
+    --color-terceario: white;
+  }
+
+  /* Style the navigation bar */
+  .navbar {
+    /* width: 100%; */
+    background-color: var(--color-fondo-primario);
+    overflow: hidden;
+    /* auto */
+  }
+
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    display: block;
+    /* -- */
+    color: var(--color-primario);
+    text-align: center;
+    padding: 12px;
+    /* 14px 16px */
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    /* background-color: #000; */
+    background-color: var(--color-fondo-secundario);
+    color: var(--color-secundario);
+  }
+
+  /* Current/active navbar link */
+  .navbar .active {
+    background-color: var(--color-fondo-terceario);
+    color: var(--color-terceario);
+  }
+
+  /* Hide the link that should open and close the topnav on small screens */
+  .navbar .icon {
+    display: none;
+  }
+
+  body, .contenedor-fluido {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: #ccd2c2;
+  }
+    
+  .contenedor {
+    /* Si queremos que el footer se vaya al final de la pagina
+      Debemos usar: header - main - footer
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+    */
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 575px) {
+    .navbar a:not(:first-child) {
+      display: none;
+    }
+
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+
+    .contenedor {
+      width: 565;
+    }
+  }
+
+  /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 575px) {
+    .navbar.responsive {
+      position: relative;
+    }
+
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .contenedor {
+      width: 565;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .contenedor {
+      width: 750px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .contenedor {
+      width: 970px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .contenedor {
+      width: 1170px;
+    }
+  }
+
+
+
+  .fila {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .docecolumnas {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sietecolumnas {
+    width: 58.3%;
+    padding: 10px;
+  }
+
+  .seiscolumnas {
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .cincocolumnas {
+    width: 41.6%;
+    padding: 10px;
+  }
+
+  .cuatrocolumnas {
+    width: 33.3%;
+    padding: 10px;
+  }
+
+  .redessociales {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .redsocial {
+    color: var(--color-fondo-primario);
+    /* rgb(61, 60, 60);*/
+    padding: 5px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    background-color: var(--color-fondo-primario);
+    color: var(--color-primario);
+  }
+
+  h2 {
+    background-color: var(--color-fondo-primario);
+    color: var(--color-primario);
+    border-radius: 5px 20px;
+    padding: 7px 20px;
+    margin: 5px;
+  }
+
+  p {
+    text-align: justify;
+    /*border: 1px dashed var(--color-fondo-primario);*/
+    border-radius: 5px;
+    box-shadow: 5px 5px var(--color-fondo-primario);
+    /* box-shadow: 5px -5px black; */
+    padding: 5px 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  footer {
+    border: 1px solid var(--color-fondo-primario);
+    border-radius: 10px 25px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .colores-uno {
+    /*background: linear-gradient(rgba(64, 136, 43, 1), #333);*/
+    background: linear-gradient(rgba(64, 136, 43, 1), #1f2f16);
+    color: #bfea7c;
+  }
+
+  .colores-dos {
+    background: linear-gradient(#416D19, #9bcf53);
+    color: #faf5a5;
+  }
+
+  .colores-tres {
+    background: linear-gradient(rgba(0, 80, 77, 1), #111);
+    color: white;
+  }
+
+  .colores-cuatro {
+    background: linear-gradient(rgb(190, 203, 203), #aaa);
+    color: black;
+  }
+
+  .parrafo-ajustado {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+  

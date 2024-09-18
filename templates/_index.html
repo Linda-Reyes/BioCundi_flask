@@ -1,0 +1,25 @@
+{% extends '_base.html' %}
+
+{% block title %}BioCundi{% endblock %}
+
+{% block body %}
+
+<div class="fila">
+      <img src="{{ url_for('static', filename='img/bird.jpg') }}" alt="">
+</div>
+
+<div class="fila">
+    <div class="docecolumnas">        
+        <h2 class="colores-uno">Somos BioCundi</h2>
+        <p class="parrajo-ajustado"> Descubre la riqueza única de la biodiversidad en Cundinamarca
+            y Boyacá. Esta región alberga especies únicas en el mundo, convirtiéndose en un tesoro natural
+            invaluable. Acompáñanos en un viaje por senderos accesibles
+            para conocer de cerca la flora, fauna y ecosistemas que hacen
+            de este lugar un paraíso biodiverso. ¡Explora, aprende y
+            celebra la naturaleza con nosotros: Un grupo de estudiantes de Talento Tech,
+            que quiere dar a conocer la Biovidersidad de la Región CunduBoyacense!
+        </p>
+        <img src="{{ url_for('static', filename='img/pisada.jpg') }}" alt="">
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+-----------------------------------------------------------------------
+# Estructura Básica del proyecto WEB en Python con el Frmaework Flask:
+-----------------------------------------------------------------------
+[Carpeta Proyecto WEB]
+    [static]
+    [templates]
+    index.py
+
+-----------------------------------------------------------------------
+# Desglosado del directorio:
+-----------------------------------------------------------------------
+[Carpeta Proyecto WEB]
+    [static]
+        [css]
+        [img] o [images] 
+        [js]       
+    [templates]
+        {archivos html}
+    index.py
+        (Las sentencias que ejecutan el sitio)
+-----------------------------------------------------------------------

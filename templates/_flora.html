@@ -1,0 +1,40 @@
+{% extends '_base.html' %}
+
+{% block title %}Flora Endémica de la Región Cundiboyacense{% endblock %}
+
+{% block body %}
+    <h2 Class="colores-dos=">Flora</h2>
+            
+    <div class="fila">
+        <div class="seiscolumnas">        
+            <h2 class="colores-uno">Espeletia pycnophylla</h2>
+            <img src="{{ url_for('static', filename='img/frailejon.png') }}" alt="">
+            <p class="parrajo-ajustado">Conocida como "frailejón", es una planta
+                característica de los páramos de los Andes colombianos.
+            </p>
+        </div>
+        <div class="seiscolumnas">        
+            <h2 class="colores-uno">Eryngium an dicola</h2>
+            <img src="{{ url_for('static', filename='img/EryngiumAndicola.png') }}" alt="">
+            <p class="parrajo-ajustado">Una planta de la familia de las apiáceas que
+                crece en los páramos y bosques de montaña.
+            </p>
+        </div>
+
+        <div class="seiscolumnas">        
+            <h2 class="colores-uno">Senecio laevis</h2>
+            <img src="{{ url_for('static', filename='img/SenecioLaevis.png') }}" alt="">
+            <p class="parrajo-ajustado">Otra especie de la familia Asteraceae,
+                endémica de los páramos.
+            </p>
+        </div>
+    </div>
+
+    <div class="fila" style="margin-top: px;">
+        <img src="{{ url_for('static', filename='img/flora1.png') }}" alt="">
+    </div>
+    <h2><i class="fa fa-leaf" aria-hidden="true"></i>&nbsp; Flora Endémica de la Región Cundiboyacense</h2>
+    {% for flora in lista %}
+        <li style="list-style-type: none;"><i class="fa fa-leaf" aria-hidden="true"></i>&nbsp;{{ flora }}</li>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends '_base_graficos.html' %}
+
+{% block title %}Gráficos con Chart.js{% endblock %}
+
+{% block styles %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="fila">
+        <div class="sietecolumnas">
+            <select name="" id="tipoBarra">
+                <option value="bar">Gráfico Tipo Barra(bar)</option>
+                <option value="line">Gráfico Tipo linea(line)</option>
+            </select>
+            <button onclick="mostrarBarra();">Mostrar Gráfico</button>
+            <div id="chart-bar-container">
+                <h3 id="titulo1"></h3>
+                <canvas id="canvas1" width="100%"></canvas>
+            </div>
+        </div>
+
+        <div class="cincocolumnas">
+            <select name="" id="tipoTorta">
+                <option value="pie">Gráfico Tipo Pastel(pie)</option>
+                <option value="doughnut">Gráfico Tipo Dona(doughnut)</option>
+                <option value="polarArea">Gráfico Tipo Area Polar(polar area)</option>
+            </select>
+            <button onclick="mostrarTorta();">Mostrar Gráfico</button>
+            <div id="chart-pie-container">
+                <h3 id="titulo2"></h3>
+                <canvas id="canvas2" width="100%"></canvas>
+            </div>
+        </div>        
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{url_for('static', filename='js/_graficos_chartjs.js') }}"></script>
+{% endblock %}

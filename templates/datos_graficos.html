@@ -1,0 +1,32 @@
+{% extends './_base.html' %}
+
+{% block title %}Datos Gráficos{% endblock %}
+
+{% block body %}
+
+<div class="fila">
+    <div class="seiscolumnas">
+        <h2 class="colores-uno">{{ nombre }}</h2>
+        <h4>Eje X</h4>
+        [
+        {% for x in elejex %}
+            {{ x }}, &nbsp;
+        {% endfor %}
+        ]
+        <h4>Eje Y</h4>
+        [
+        {% for y in elejey %}
+            {{ y }}, &nbsp;                           
+        {% endfor %}
+        ]        
+        <img src="{{ url_for('static', filename=url1) }}" alt="Graph 1" width="100%">
+    </div>
+
+    <div class="seiscolumnas">
+        <h2 class="colores-dos">{{ nombre2 }}</h2>
+        <img src="{{ url_for('static', filename=url2) }}" alt="Graph 2" width="100%">
+    </div>
+
+</div>
+
+{% endblock %}
