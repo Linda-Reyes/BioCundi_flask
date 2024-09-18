@@ -1,0 +1,35 @@
+{% extends '_base.html' %}
+
+{% block title %}Parques{% endblock %}
+
+{% block body %}
+    <h2 Class="colores-dos=">Parques</h2>
+        
+    <div class="fila">
+        <div class="seiscolumnas">        
+            <h2 class="colores-uno">Parque Los Tunjos</h2>
+            <img src="{{ url_for('static', filename='img/ParqueTunjos.png') }}" alt="">
+            <p class="parrajo-ajustado">El Parque Natural Los Tunjos, ubicado en Cundinamarca, es un área protegida que destaca por sus formaciones rocosas y petroglifos precolombinos, ofreciendo un espacio de conservación arqueológica y biodiversidad.
+            </p>
+        </div>
+        <div class="seiscolumnas">        
+            <h2 class="colores-uno">Parque Sumapaz</h2>
+            <img src="{{ url_for('static', filename='img/ParqueSumapaz.png') }}" alt="">
+            <p class="parrajo-ajustado">El Parque Nacional Natural Sumapaz, considerado el páramo más grande del mundo, alberga una rica variedad de fauna y flora de alta montaña, siendo un ecosistema clave para la producción de agua y la regulación climática.
+            </p>
+        </div>
+
+        <div class="seiscolumnas">        
+            <h2 class="colores-uno">Parque Oso de Anteojos</h2>
+            <img src="{{ url_for('static', filename='img/ParqueOso.png') }}" alt="">
+            <p class="parrajo-ajustado">la Reserva Natural del Oso de Anteojos, en Boyacá, es un santuario para esta especie emblemática en peligro de extinción, brindando refugio también a diversas especies de fauna andina y páramos, en un entorno de conservación y turismo responsable.
+            </p>
+        </div>
+    </div>
+
+    <h2><i class="fa fa-leaf" aria-hidden="true"></i>&nbsp; Parques Naturales Región Cundiboyacense</h2>
+    {% for parques in lista %}
+        <li style="list-style-type: none;"><i class="fa fa-leaf" aria-hidden="true"></i>&nbsp;{{ parques }}</li>
+    {% endfor %}
+
+{% endblock %}

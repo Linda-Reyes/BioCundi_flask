@@ -48,12 +48,17 @@ def ir_a_flora():
     lista_flora = ["Espeletia argentea", "Puya santosii", "Ceroxylon quindiuense", "Cyathea caracasana", "Lupinus bogotensis", "Aequatorium dodsonii", "Draba boyacensis", "Salvia muisca", "Epidendrum cundinamarcae", "Polylepis sericea"]
     return render_template('_flora.html', lista_flora=lista_flora)
 
-# Configurar la ruta del proyecto para la pagina de 
 @app_flask.route('/fauna')
 def ir_a_fauna():
     #return 'Bienvenido a la pagina WEB Principal hecha con Flask'    
     lista_fauna = ["Nymphargus ruizi", "Anadia bogotensis", "Coeligena orina", "Hapalopsittaca fuertesi fuertesi", "Thomasomys bombycinus", "Leopardus tigrinus pardinoides", "Atelopus muisca", "Merganetta armata columbiana", "Marmosa robinsoni colombiana", "Phalcoboenus carunculatus"]
     return render_template('_fauna.html', lista_fauna=lista_fauna)
+
+@app_flask.route('/parques')
+def ir_a_parques():
+    #return 'Bienvenido a la pagina WEB Principal hecha con Flask'    
+    lista_parques = ["Parque Nacional Natural Chingaza", "Parque Nacional Natural Sumapaz", "Parque Nacional Natural Serranía de los Yariguíes", "Santuario de Fauna y Flora Iguaque", "Parque Nacional Natural El Cocuy", "Parque Nacional Natural Pisba", "Parque Natural Chicaque", "Parque Natural Los Tunos", "Parque Natural Siete Chorros", "Santuario de Flora y Fauna de Guanentá Alto Río Fonce"]
+    return render_template('_fauna.html', lista_parques=lista_parques)
 # -----------------------------------------------------------------
 
 

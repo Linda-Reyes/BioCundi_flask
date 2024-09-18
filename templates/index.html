@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Oswald:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
-    <title>Biblioteca Sabana</title>
+    <title>BioCundi</title>
 </head>
 <body>
     
@@ -16,9 +16,8 @@
           <a class="active" href="#home"><i class="fa fa-home"></i> Home</a>
           <a href="flora.php"><i class="fa fa-leaf" aria-hidden="true"></i> Flora</a>
           <a href="fauna.php"><i class="fa fa-paw" aria-hidden="true"></i> Fauna</a>
-          <a href="lector.php"><i class="fa fa-id-card" aria-hidden="true"></i> Lector</a>
-          <a href="prestamo.php"><i class="fa fa-archive" aria-hidden="true"></i> Prestamo</a>
-          <a href="devolucion.php"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Devolución</a>
+          <a href="parques.php"><i class="fa fa-file-image-o" aria-hidden="true"></i></i> Parques</a>
+          
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -29,26 +28,17 @@
     </div>
 
     <div class="fila">
-        <div class="seiscolumnas">        
-            <h2 class="colores-uno">Misión</h2>
-            <p class="parrajo-ajustado">La Biblioteca Nacional de Colombia busca impulsar redes y procesos en torno a las bibliotecas públicas, las
-                memorias, el patrimonio bibliográfico y documental, las prácticas lectoras, las culturas orales y escritas y
-                los
-                saberes, para contribuir al reconocimiento y salvaguardia de las voces e identidades del país. Encargada de
-                preservar
-                el material ponerlo al servicio de investigadores, académicos y del público en general.
-            </p>
-        </div>
-        <div class="seiscolumnas">        
-            <h2 class="colores-dos">Visión</h2>
-            <p class="parrajo-ajustado">Para el 2026, la Biblioteca Nacional de Colombia será reconocida como una institución que propicia espacios
-                de
-                encuentro ciudadano y diálogo intercultural, así como procesos sostenibles de creación, formación y
-                articulación
-                de los diversos actores relacionados con las bibliotecas públicas, las memorias, el patrimonio bibliográfico
-                y
-                documental, las prácticas lectoras, las culturas orales y escritas y los saberes.
-            </p>
+        <div class="docecolumnas">        
+          <h2 class="colores-uno">Somos BioCundi</h2>
+          <p class="parrajo-ajustado"> Descubre la riqueza única de la biodiversidad en Cundinamarca
+              y Boyacá. Esta región alberga especies únicas en el mundo, convirtiéndose en un tesoro natural
+              invaluable. Acompáñanos en un viaje por senderos accesibles
+              para conocer de cerca la flora, fauna y ecosistemas que hacen
+              de este lugar un paraíso biodiverso. ¡Explora, aprende y
+              celebra la naturaleza con nosotros: Un grupo de estudiantes de Talento Tech,
+              que quiere dar a conocer la Biovidersidad de la Región CunduBoyacense!
+          </p>
+          <img src="{{ url_for('static', filename='img/pisada.jpg') }}" alt="">
         </div>
     </div>
 
