@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Oswald:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
-    <title>{% block title %} {% endblock %}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Oswald:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <title>{% block title %} {% endblock %}</title>
 </head>
+
 <body>
-    <div class="contenedor">      
-        <div class="navbar" id="myNavbar">
-          <a class="active" href="/"><i class="fa fa-home"></i> BioCundi</a>
-          <a href="{{ url_for('ir_a_flora') }}"><i class="fa fa-leaf" aria-hidden="true"></i> Flora</a>
-          <a href="{{ url_for('ir_a_fauna') }}"><i class="fa fa-paw" aria-hidden="true"></i> Fauna</a>
-          <a href="{{ url_for('ir_a_parques') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Parques Naturales</a>
-         
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div> 
+  <div class="contenedor">
+    <div class="navbar" id="myNavbar">
+      <a class="active" href="/"><i class="fa fa-home"></i> BioCundi</a>
+      <a href="{{ url_for('ir_a_flora') }}"><i class="fa fa-leaf" aria-hidden="true"></i> Flora</a>
+      <a href="{{ url_for('ir_a_fauna') }}"><i class="fa fa-paw" aria-hidden="true"></i> Fauna</a>
+      <a href="{{ url_for('ir_a_parques') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Parques
+        Naturales</a>
 
-        {% block body %}
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 
-        {% endblock %}
+    {% block body %}
 
-        <footer>
-            <div class="fila">
-              <div class="seiscolumnas">
-                <span><i class="fa fa-copyright fa-2x" aria-hidden="true"> </i> 2024 BioCundi Todos los derechos reservados. </span>
-              </div>
-              <div class="seiscolumnas redessociales">
-                <a class="redsocial" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                <a class="redsocial" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-                <a class="redsocial" href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-              </div>
-            </div>
-            <div class="fila">
-              <div class="docecolumnas">
-                <h2 style="text-align: center;">Carlos Garcia &nbsp;&nbsp;&nbsp;&nbsp; Diana Diaz &nbsp;&nbsp;&nbsp;&nbsp; Julio Rios
-                  &nbsp;&nbsp;&nbsp;&nbsp; Linda Reyes</h2>
-              </div>
-            </div>
-          </footer>  
-        </div>        
-    
-        <div class="fila">
-            <br />
-          </div>
-        
-          <!-- <script src="js/navegacion.js"></script> -->
-          <script>
-            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-            function myFunction() {
-              var x = document.getElementById("myNavbar");
-              if (x.className === "navbar") {
-                x.className += " responsive";
-              } else {
-                x.className = "navbar";
-              }
-            }
-          </script>            
-    </body>
-</html>          
+    {% endblock %}
+
+    <footer>
+      <div class="fila">
+        <div class="seiscolumnas">
+          <span><i class="fa fa-copyright fa-2x" aria-hidden="true"> </i> 2024 BioCundi Todos los derechos reservados.
+          </span>
+        </div>
+        <div class="seiscolumnas redessociales">
+          <a class="redsocial" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+          <a class="redsocial" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          <a class="redsocial" href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="docecolumnas">
+          <h2 style="text-align: center;">
+            <a href="https://github.com/carlos92aandres" target="_blank">Carlos Garcia</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/Linda-Reyes" target="_blank">Linda Reyes</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/Dianisvibra5" target="_blank">Diana Diaz</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/jcesarrios" target="_blank">Julio Rios</a> &nbsp;&nbsp;&nbsp;&nbsp;
+          </h2>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div class="fila">
+    <br />
+  </div>
+
+  <!-- <script src="js/navegacion.js"></script> -->
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+</body>
+
+</html>
