@@ -1,9 +1,9 @@
 {% extends '_base.html' %}
 
-{% block title %}Parques{% endblock %}
+{% block title %}Parques Naturales{% endblock %}
 
 {% block body %}
-    <h2 Class="colores-dos=">Parques</h2>
+    <h2 Class="colores-dos=">Parques Naturales</h2>
         
     <div class="fila">
         <div class="seiscolumnas">        
@@ -29,7 +29,7 @@
 
     <h2><i class="fa fa-leaf" aria-hidden="true"></i>&nbsp; Parques Naturales Región Cundiboyacense</h2>
     {% for parques in lista %}
-        <li style="list-style-type: none;"><i class="fa fa-leaf" aria-hidden="true"></i>&nbsp;{{ parques }}</li>
+        <li class="li-font" style="list-style-type: none;"><i class="fa fa-leaf" aria-hidden="true"></i>&nbsp;{{ parques }}</li>
     {% endfor %}
 
 {% endblock %}

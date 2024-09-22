@@ -1,81 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Oswald:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
-    <title>BioCundi</title>
-</head>
-<body>
-    
-    <div class="contenedor">      
-        <div class="navbar" id="myNavbar">
-          <a class="active" href="#home"><i class="fa fa-home"></i> Home</a>
-          <a href="flora.php"><i class="fa fa-leaf" aria-hidden="true"></i> Flora</a>
-          <a href="fauna.php"><i class="fa fa-paw" aria-hidden="true"></i> Fauna</a>
-          <a href="parques.php"><i class="fa fa-file-image-o" aria-hidden="true"></i></i> Parques</a>
-          
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>    
 
-    <div class="fila">
-        <img src="{{ url_for('static', filename='img/bird.jpg') }}" alt="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Oswald:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <title>BioCundi</title>
+</head>
+
+<body>
+
+  <div class="contenedor">
+    <div class="navbar" id="myNavbar">
+      <a class="active" href="#home"><i class="fa fa-home"></i> Home</a>
+      <a href="flora.php"><i class="fa fa-leaf" aria-hidden="true"></i> Flora</a>
+      <a href="fauna.php"><i class="fa fa-paw" aria-hidden="true"></i> Fauna</a>
+      <a href="parques.php"><i class="fa fa-file-image-o" aria-hidden="true"></i></i> Parques</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <div class="fila">
-        <div class="docecolumnas">        
-          <h2 class="colores-uno">Somos BioCundi</h2>
-          <p class="parrajo-ajustado"> Descubre la riqueza única de la biodiversidad en Cundinamarca
-              y Boyacá. Esta región alberga especies únicas en el mundo, convirtiéndose en un tesoro natural
-              invaluable. Acompáñanos en un viaje por senderos accesibles
-              para conocer de cerca la flora, fauna y ecosistemas que hacen
-              de este lugar un paraíso biodiverso. ¡Explora, aprende y
-              celebra la naturaleza con nosotros: Un grupo de estudiantes de Talento Tech,
-              que quiere dar a conocer la Biovidersidad de la Región CunduBoyacense!
-          </p>
-          <img src="{{ url_for('static', filename='img/pisada.jpg') }}" alt="">
-        </div>
+      <img src="{{ url_for('static', filename='img/bird.jpg') }}" alt="">
+    </div>
+
+    <div class="fila">
+      <div class="docecolumnas">
+        <h2 class="colores-uno">Somos BioCundi</h2>
+        <p class="parrajo-ajustado"> Descubre la riqueza única de la biodiversidad en Cundinamarca
+          y Boyacá. Esta región alberga especies únicas en el mundo, convirtiéndose en un tesoro natural
+          invaluable. Acompáñanos en un viaje por senderos accesibles
+          para conocer de cerca la flora, fauna y ecosistemas que hacen
+          de este lugar un paraíso biodiverso. ¡Explora, aprende y
+          celebra la naturaleza con nosotros: Un grupo de estudiantes de Talento Tech,
+          que quiere dar a conocer la Biovidersidad de la Región CunduBoyacense!
+        </p>
+        <img src="{{ url_for('static', filename='img/pisada.jpg') }}" alt="">
+      </div>
     </div>
 
     <footer>
-        <div class="fila">
-          <div class="seiscolumnas">
-            <span><i class="fa fa-copyright fa-2x" aria-hidden="true"> </i> 2024 - Copyright.</span>
-          </div>
-          <div class="seiscolumnas redessociales">
-            <a class="redsocial" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-            <a class="redsocial" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-            <a class="redsocial" href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-          </div>
+      <div class="fila">
+        <div class="seiscolumnas">
+          <span><i class="fa fa-copyright fa-2x" aria-hidden="true"> </i> 2024 BioCundi Todos los derechos reservados.
+          </span>
         </div>
-        <div class="fila">
-          <div class="docecolumnas">
-            <h2 style="text-align: center;">Programador Nivel Explorador</h2>
-          </div>
+        <div class="seiscolumnas redessociales">
+          <a class="redsocial" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+          <a class="redsocial" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          <a class="redsocial" href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
         </div>
-      </footer>  
-    </div>        
-
-    <div class="fila">
-        <br />
       </div>
-    
-      <!-- <script src="js/navegacion.js"></script> -->
-      <script>
-        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-        function myFunction() {
-          var x = document.getElementById("myNavbar");
-          if (x.className === "navbar") {
-            x.className += " responsive";
-          } else {
-            x.className = "navbar";
-          }
-        }
-      </script>    
+      <div class="fila">
+        <div class="docecolumnas">
+          <h2 style="text-align: center;">
+            <a href="https://github.com/carlos92aandres" target="_blank">Carlos Garcia</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/Linda-Reyes" target="_blank">Linda Reyes</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/Dianisvibra5" target="_blank">Diana Diaz</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/jcesarrios" target="_blank">Julio Rios</a> &nbsp;&nbsp;&nbsp;&nbsp;
+          </h2>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="fila">
+    <br />
+  </div>
+
+  <!-- <script src="js/navegacion.js"></script> -->
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
 </body>
+
 </html>
